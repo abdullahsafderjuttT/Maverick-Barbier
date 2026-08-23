@@ -9,14 +9,23 @@
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
-// ---- 🔧 EDIT THESE TWO LINES with your own Supabase project values ----
-const SUPABASE_URL = 'https://YOUR-PROJECT-REF.supabase.co';
-const SUPABASE_ANON_KEY = 'YOUR-SUPABASE-ANON-PUBLIC-KEY';
+// ---- These two lines are filled in one of two ways — pick ONE: ----
+//
+//   A) Manually: replace the two placeholder strings below yourself
+//      and commit the file. Simple, no build step needed.
+//
+//   B) Via Netlify environment variables: leave the __SUPABASE_URL__ /
+//      __SUPABASE_ANON_KEY__ tokens exactly as they are. scripts/inject-env.js
+//      (wired up in netlify.toml) swaps them for your real values at
+//      deploy time, reading them from Netlify's Environment variables
+//      panel — nothing to edit here, and the real keys never sit in git.
+const SUPABASE_URL = '__SUPABASE_URL__';
+const SUPABASE_ANON_KEY = '__SUPABASE_ANON_KEY__';
 // -------------------------------------------------------------------------
 
 const isConfigured =
-  !SUPABASE_URL.includes('YOUR-PROJECT-REF') &&
-  !SUPABASE_ANON_KEY.includes('YOUR-SUPABASE-ANON-PUBLIC-KEY');
+  !SUPABASE_URL.includes('__SUPABASE_URL__') && SUPABASE_URL.startsWith('https://') &&
+  !SUPABASE_ANON_KEY.includes('__SUPABASE_ANON_KEY__') && SUPABASE_ANON_KEY.length > 20;
 
 const supabase = isConfigured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 
