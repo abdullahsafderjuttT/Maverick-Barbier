@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maverick Barbier — Fades, Shaves &amp; Sharp Lines</title>
+<meta name="description" content="Maverick Barbier — Montréal barbershop. Book fades, beard sculpting and hot towel shaves online.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz@1,9..144&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <img src="assets/logo.svg" alt="Maverick Barbier logo">
+    Maverick Barbier
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#about">Story</a>
+    <a href="#services">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#team">Barbers</a>
+    <a href="#booking" class="btn btn-primary" style="padding:0.6rem 1.3rem;">Book Now</a>
+  </nav>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__grain"></div>
+  <div class="container hero__content">
+    <div>
+      <p class="hero__eyebrow">Montréal · Est. 2019</p>
+      <h1>Sharp fades.<br>Sharper <em>lines.</em></h1>
+      <p class="hero__tagline">A barbershop built on precision — where every fade is cut clean and every edge catches the light.</p>
+      <div class="hero__cta">
+        <a href="#booking" class="btn btn-primary">Book Your Chair</a>
+        <a href="#services" class="btn btn-ghost">View Menu</a>
+      </div>
+      <div class="hero__meta">
+        <div><b>4.9★</b><span>Google Rating</span></div>
+        <div><b>7</b><span>Years Cutting</span></div>
+        <div><b>5</b><span>Master Barbers</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- signature: ambient dust-mote field drifting through the hero -->
+  <div class="dust-field" aria-hidden="true">
+    <canvas class="dust-canvas" data-count="90"></canvas>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="scroll-cue__line"></span></div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Skin Fades</span><span>Beard Sculpting</span><span>Hot Towel Shaves</span><span>Hair Design</span><span>Since 2019</span>
+    <span>Skin Fades</span><span>Beard Sculpting</span><span>Hot Towel Shaves</span><span>Hair Design</span><span>Since 2019</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__art reveal">
+      <img class="dust-target" src="assets/photos/shop-interior.svg" alt="Maverick Barbier shop interior illustration" loading="lazy">
+      <img class="facet-badge" src="assets/dust-badge.svg" alt="" aria-hidden="true">
+    </div>
+    <div class="about__body reveal">
+      <p class="eyebrow">Our Story</p>
+      <h2>Precision is the whole point.</h2>
+      <p>Maverick Barbier opened on Rue St-Zotique with one idea: a haircut should be treated like a craft, not a transaction. Every chair is run by a barber who trained for years to get a single line right.</p>
+      <p>We keep the shop small on purpose — five barbers, one room, no rush. You'll leave knowing exactly who cut your hair, and you'll come back for the same chair next time.</p>
+      <div class="about__stats">
+        <div><b>12k+</b><span>Cuts Delivered</span></div>
+        <div><b>7 yrs</b><span>In Montréal</span></div>
+        <div><b>4.9/5</b><span>Client Rating</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES / MENU ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The Menu</p>
+      <h2>Haircuts &amp; grooming</h2>
+      <p class="lede">Every service ends the same way — a hot towel, a straight-razor cleanup, and a mirror check you'll actually be happy with.</p>
+    </div>
+
+    <div class="services__tabs" role="tablist">
+      <button class="tab-btn is-active" data-tab="cuts">Haircuts</button>
+      <button class="tab-btn" data-tab="beard">Beard &amp; Shave</button>
+      <button class="tab-btn" data-tab="combo">Combos &amp; Kids</button>
+    </div>
+
+    <div class="menu-panel is-active" id="cuts">
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Classic Cut</div><div class="menu-item__desc">Scissor or clipper cut, wash &amp; style</div></div>
+        <div class="menu-item__price">$35</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Skin Fade</div><div class="menu-item__desc">Bald fade, blended and finished with a straight razor</div></div>
+        <div class="menu-item__price">$42</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Hair Design</div><div class="menu-item__desc">Custom line-up or pattern work</div></div>
+        <div class="menu-item__price">$48</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Buzz Cut</div><div class="menu-item__desc">One-length clipper cut, quick &amp; clean</div></div>
+        <div class="menu-item__price">$25</div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="beard">
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Beard Sculpt</div><div class="menu-item__desc">Shape, trim and line-up with razor detail</div></div>
+        <div class="menu-item__price">$28</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Hot Towel Shave</div><div class="menu-item__desc">Traditional straight-razor shave, hot towel prep</div></div>
+        <div class="menu-item__price">$38</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Beard Color</div><div class="menu-item__desc">Grey-blending or full tone, natural finish</div></div>
+        <div class="menu-item__price">$30</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Face Wax</div><div class="menu-item__desc">Ears, nose &amp; brow cleanup</div></div>
+        <div class="menu-item__price">$15</div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="combo">
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Cut + Beard Combo</div><div class="menu-item__desc">Full haircut with beard sculpt &amp; hot towel</div></div>
+        <div class="menu-item__price">$58</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">The Maverick</div><div class="menu-item__desc">Cut, shave, beard color &amp; scalp treatment</div></div>
+        <div class="menu-item__price">$85</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Kids Cut</div><div class="menu-item__desc">12 &amp; under, clipper or scissor</div></div>
+        <div class="menu-item__price">$22</div>
+      </div>
+      <div class="menu-item reveal">
+        <div><div class="menu-item__name">Father &amp; Son</div><div class="menu-item__desc">Two cuts, back-to-back chairs</div></div>
+        <div class="menu-item__price">$50</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="dust-field" aria-hidden="true"><canvas class="dust-canvas" data-count="50"></canvas></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Inside The Shop</p>
+      <h2>A look around</h2>
+      <p class="lede">Swap these placeholders for your own shop photos before you deploy — see README for exactly which files to replace.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="reveal"><img class="dust-target" src="assets/photos/gallery-1.svg" alt="Barbershop atmosphere" loading="lazy"></figure>
+      <figure class="reveal"><img class="dust-target" src="assets/photos/gallery-2.svg" alt="Fresh fade detail" loading="lazy"></figure>
+      <figure class="reveal"><img class="dust-target" src="assets/photos/gallery-3.svg" alt="Beard sculpt detail" loading="lazy"></figure>
+      <figure class="reveal"><img class="dust-target" src="assets/photos/gallery-4.svg" alt="Straight razor shave" loading="lazy"></figure>
+      <figure class="reveal"><img class="dust-target" src="assets/photos/gallery-5.svg" alt="Barber chair" loading="lazy"></figure>
+      <figure class="reveal"><img class="dust-target" src="assets/photos/gallery-6.svg" alt="Shop tools" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The Barbers</p>
+      <h2>Meet the chairs</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <img class="dust-target" src="assets/photos/team-1.svg" alt="Portrait of Giancarlo, owner and barber" loading="lazy">
+        <div class="team-card__body">
+          <h3>Giancarlo</h3>
+          <span class="team-card__role">Owner &amp; Master Barber</span>
+          <p>Founded Maverick in 2019. Specializes in sharp fades and precision line-ups.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <img class="dust-target" src="assets/photos/team-2.svg" alt="Portrait of Mathew, barber" loading="lazy">
+        <div class="team-card__body">
+          <h3>Mathew</h3>
+          <span class="team-card__role">Senior Barber</span>
+          <p>Known for textured crops and beard sculpting with a razor finish.</p>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <img class="dust-target" src="assets/photos/team-3.svg" alt="Portrait of Matty, barber" loading="lazy">
+        <div class="team-card__body">
+          <h3>Matty</h3>
+          <span class="team-card__role">Barber</span>
+          <p>Hair design specialist — freehand parts, patterns and custom work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="booking" id="booking">
+  <div class="dust-field" aria-hidden="true"><canvas class="dust-canvas" data-count="40"></canvas></div>
+  <div class="container">
+    <div class="booking__info reveal">
+      <p class="eyebrow">Reserve Your Chair</p>
+      <h2>Book online, no calls needed.</h2>
+      <p>Pick a service, a barber, and a time that works — we'll confirm by email. Walk-ins welcome when a chair's free, but booking guarantees your spot.</p>
+      <ul class="booking__hours">
+        <li><span>Mon – Fri</span><span>10:00 – 20:00</span></li>
+        <li><span>Saturday</span><span>9:00 – 18:00</span></li>
+        <li><span>Sunday</span><span>Closed</span></li>
+      </ul>
+      <p style="margin-top:1.6rem; font-size:0.9rem; opacity:0.8;">173 Rue St-Zotique Est, Montréal, QC</p>
+    </div>
+
+    <form class="booking-form reveal" id="bookingForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Classic Cut — $35</option>
+            <option>Skin Fade — $42</option>
+            <option>Hair Design — $48</option>
+            <option>Buzz Cut — $25</option>
+            <option>Beard Sculpt — $28</option>
+            <option>Hot Towel Shave — $38</option>
+            <option>Cut + Beard Combo — $58</option>
+            <option>The Maverick — $85</option>
+            <option>Kids Cut — $22</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="barber">Preferred barber</label>
+          <select id="barber" name="barber">
+            <option value="">No preference</option>
+            <option>Giancarlo</option>
+            <option>Mathew</option>
+            <option>Matty</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="field">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" name="notes" placeholder="Anything your barber should know"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Confirm Reservation</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Word Around The Chair</p>
+      <h2>What clients say</h2>
+    </div>
+    <div class="t-grid">
+      <div class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Best fade I've had in Montréal, full stop. Giancarlo doesn't rush a single line."</p>
+        <div class="t-card__name">— Samuel R.</div>
+      </div>
+      <div class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Booked online in two minutes, walked in and the chair was ready. That never happens."</p>
+        <div class="t-card__name">— Ahmed K.</div>
+      </div>
+      <div class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"The hot towel shave alone is worth the trip. My beard has never looked this clean."</p>
+        <div class="t-card__name">— Marc-André T.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="dust-field" aria-hidden="true"><canvas class="dust-canvas" data-count="35"></canvas></div>
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><img src="assets/logo.svg" alt="Maverick Barbier logo">Maverick Barbier</div>
+      <p style="margin-top:1rem; font-size:0.9rem; opacity:0.75; max-width:32ch;">Precision cuts on Rue St-Zotique. Book your chair online, any day of the week.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#about">Story</a></li>
+        <li><a href="#services">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#team">Barbers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li>173 Rue St-Zotique Est</li>
+        <li>Montréal, QC</li>
+        <li>(514) 555-0173</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/maverickmtl/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#booking">Book Online</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Maverick Barbier. All rights reserved.</span>
+    <span>Built for GitHub · Netlify · Supabase</span>
+  </div>
+</footer>
+
+<script type="module" src="js/supabase-client.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/dust-reveal.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

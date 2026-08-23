@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="circleGrad" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#2BBE79"/>
+      <stop offset="55%" stop-color="#1B8A54"/>
+      <stop offset="100%" stop-color="#0D3B2A"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#circleGrad)"/>
+  <circle cx="100" cy="100" r="98" fill="none" stroke="#F6F8F5" stroke-width="2" opacity="0.5"/>
+
+  <!-- skull -->
+  <g fill="#F6F8F5">
+    <!-- cranium -->
+    <path d="M100 42
+             C 129 42 150 64 150 93
+             C 150 108 144 118 137 126
+             L 137 140
+             C 137 146 132 150 126 150
+             L 122 150 L 122 140 L 116 140 L 116 150 L 108 150 L 108 140 L 100 140
+             L 100 150 L 92 150 L 92 140 L 84 140 L 84 150 L 74 150
+             C 68 150 63 146 63 140
+             L 63 126
+             C 56 118 50 108 50 93
+             C 50 64 71 42 100 42 Z"/>
+  </g>
+
+  <!-- eye sockets -->
+  <ellipse cx="82" cy="92" rx="11" ry="14" fill="#0D3B2A"/>
+  <ellipse cx="118" cy="92" rx="11" ry="14" fill="#0D3B2A"/>
+
+  <!-- nasal cavity -->
+  <path d="M100 104 L92 118 L108 118 Z" fill="#0D3B2A"/>
+
+  <!-- fade / haircut lines on the side, the "haircut" detail -->
+  <g stroke="#0D3B2A" stroke-width="2.6" stroke-linecap="round" opacity="0.85">
+    <path d="M55 78 C 60 72 66 68 72 66" fill="none"/>
+    <path d="M52 90 C 58 84 65 80 72 78" fill="none"/>
+    <path d="M51 102 C 57 97 64 94 71 92" fill="none"/>
+  </g>
+
+  <!-- crossed razor + comb beneath the skull -->
+  <g stroke="#F6F8F5" stroke-width="4" stroke-linecap="round">
+    <line x1="64" y1="162" x2="136" y2="176"/>
+    <line x1="136" y1="162" x2="64" y2="176"/>
+  </g>
+  <circle cx="64" cy="162" r="3.5" fill="#F6F8F5"/>
+  <circle cx="136" cy="176" r="3.5" fill="#F6F8F5"/>
+</svg>
